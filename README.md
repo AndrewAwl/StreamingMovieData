@@ -21,3 +21,13 @@ To understand the movies available on some of the big streaming platformsThere i
 Don’t know how this data was pulled so hopefully it is trustworthy, it is a bit stale (8 months) so not sure if all of the movies are relevant, will not account for some newer items
 Based on comments this is based on streaming available in USA region only
 Streaming dataset does not have an IMDB link so will have to figure out how to link data to IMDB, especially given potential overlap of titles throughout the years (Movie name – Director – Year?)
+
+# Findings
+```
+·  Ran into a lot of issues with merging the streaming data set and imdb movie dataset, would like to work further / identify better ways to do this (initial step would be comparing streaming title to original title of imdb dataset as this was wildly inconsistent and imdb title is awful). Was only able to get ~5k matches out of ~17k streaming records
+· Prime Video had far and away the most robust library in terms of volume (3x the other platforms), but as I saw in a few different areas, they had more lower quality movies as well which brought down their overall rating. They also were more likely to include 'older' movies with lower ratings (1930's to 2000 really stood out)
+·  Disney+ had a ~0.2 higher avg rating than the other streaming services, makes sense since the other 3 platforms are more aggregators than producing their own content (until more recently)
+·  Looking across platforms, only found 10 movies that were consistent between 3 platforms (none were on all 4)
+·  In terms of age distribution, Disney+ was the only one to have more movies in a decade that was not the most recent one (2000's)
+·  There is a lot more that could be done with the data, did not really get a chance to look at the Top250 dataset although I incorporated it, with more time can definitely look at more cross-cuts including language, runtimes, etc.
+```
